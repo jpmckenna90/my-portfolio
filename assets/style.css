@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 html {
   height: 100%;
@@ -20,6 +24,17 @@ nav {
 nav.scrolled {
   background-color: rgba(90, 98, 101, 0);
   box-shadow: none;
+}
+
+.sidenav{
+  background-color: #5a6265;
+}
+
+.brand-logo{
+  transition: color 1s ease;
+}
+.brand-logo.scrolled{
+  color: rgb(255, 255, 255, 0) !important;
 }
 
 header#top {
@@ -56,9 +71,6 @@ a {
   color: #f9f8f9 !important;
 }
 
-a:hover {
-  color: #4b6777 !important;
-}
 
 .brand-logo {
   margin-left: 3rem;
@@ -115,4 +127,20 @@ h3 {
   .Container {
     flex-direction: column;
   }
+}
+
+li:hover{
+  background-color: #979ca2;
+  /* color: #5a6265 !important; */
+}
+
+#ingredience{
+  filter:grayscale(100%);
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#ingredience:hover{
+  transition: filter .5s ease;
+  filter:grayscale(0%);
 }
