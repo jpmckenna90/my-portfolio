@@ -10,6 +10,7 @@ html {
 
 * {
   box-sizing: border-box;
+  max-height: 100%;
 }
 
 nav {
@@ -38,7 +39,7 @@ nav.scrolled {
 }
 
 header#top {
-  background-image: url("images/mountainmirror.png");
+  background-image: url("images/mountainmirrorsmaller.png");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -95,6 +96,10 @@ h3 {
   color: white;
 }
 
+.section{
+  background-color: #979ca2;;
+}
+
 #about {
   /* background-color: #38333E; */
   /* border-top: solid 2px white; */
@@ -130,7 +135,8 @@ h3 {
 }
 
 li:hover{
-  background-color: #979ca2;
+  /* background-color: #979ca2; */
+  
   /* color: #5a6265 !important; */
 }
 
@@ -147,4 +153,42 @@ li:hover{
 
 #me{
   filter: grayscale(30%);
+}
+
+.navlist{
+  margin-right: 3%;
+}
+
+.navitem{
+  font-size: 1.3rem;
+}
+
+.navstack{
+  display: flex;
+  flex-direction: column;
+  transition: flex-direction 1s ease;
+}
+
+li.active{
+  border-left: none !important;
+  border-right: solid 2px red;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important;
+}
+
+label{
+  color: white !important;
+}
+
+#github{
+  height: 3%;
+  width: 3%;
+}
+
+a:hover{
+  border-left:none !important;
+  background-color:  rgba(0,0,0,0);
 }

@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="assets/style.css" />
     <title>Document</title>
   </head>
@@ -23,12 +24,12 @@
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo scrolled">James McKenna</a>
+          <!-- <a href="#!" class="brand-logo scrolled">James McKenna</a> -->
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact" download>Contact</a></li>
+          <ul class="left hide-on-med-and-down navlist table-of-contents">
+            <li><a href="#about" class="navitem">About</a></li>
+            <li><a href="#work" class="navitem">Work</a></li>
+            <li><a href="#contact" class="navitem">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -44,9 +45,9 @@
     <header class="valign-wrapper" id="top">
       <div class="container">
         <div class="row" id="headercontent">
-          <h1 class="center-align m8 s6">James McKenna</h1>
+          <h1 class="center-align m8 s6 animated fadeIn slow">James McKenna</h1>
           <div class="row">
-            <h2 class="center-align m8 s6">
+            <h2 class="center-align m8 s6 animated fadeIn delay-1s slow">
               Full-stack web developer.
             </h2>
           </div>
@@ -58,13 +59,15 @@
     <div class="row">
       <div class="center-align m8 s6 break"></div>
     </div>
+
+    
     
     <!-- About Begin -->
-    <div class="valign-wrapper" id="about">
+    <div class="valign-wrapper section scrollspy" id="about">
         <div class="container">
           <div class="row">
             <div class="col s12 m4 l5 aboutcontent">
-              <h3>About Me</h3>
+              <h3 class="animated fadeIn">About Me</h3>
               "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -93,7 +96,7 @@
     </div>
 
     <!-- Work Begin -->
-    <div id="work">
+    <div class="section scrollspy" id="work">
         <div class="container">
           <div class="row">
             <div class="col s12 m3 offset-m9 l3 offset-l9">  
@@ -142,8 +145,53 @@
           </div>
         </div>
     </div>
-    
-    
+
+    <!-- Break -->
+    <div class="row">
+      <div class="center-align m8 s6 break"></div>
+    </div>
+
+    <!-- Contact Begin -->
+    <div class="section scrollspy" id="contact">
+      <div class="container">
+        <div class="row">
+          <h3 class="center-align">Get in Touch</h3>
+          <form class="col s12 m8">
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="Placeholder" id="first_name" type="text">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+         
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password">
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            
+          </form>
+        </div>
+      </div> 
+    </div>
+    <div class="container">
+      <div class="row">
+      <div class="center-align">
+        <a href="https://github.com/jpmckenna90" target="_blank""><img src="assets/images/github.png" alt="github" id="github"></a>
+      </div>
+    </div>
+  </div>
 
     <!-- jQuery -->
     <script
