@@ -138,11 +138,6 @@ h3 {
   }
 }
 
-li:hover{
-  /* background-color: #979ca2; */
-  
-  /* color: #5a6265 !important; */
-}
 
 .portimg{
   filter:grayscale(100%);
@@ -171,6 +166,11 @@ li:hover{
   display: flex;
   flex-direction: column;
   transition: flex-direction 1s ease;
+  /* background-color: #546e7a; */
+}
+
+.navstack#githublogo{
+  background-color: rgba(0,0,0,0);
 }
 
 li.active{
@@ -187,12 +187,13 @@ label{
   color: white !important;
 }
 
-#github{
-  height: 3%;
-  width: 3%;
+#githublogo{
+  height: 70%;
+  width: 70%;
+  margin-top: 15%;
 }
 
-a:hover{
+li a:hover{
   border-left:none !important;
-  background-color:  rgba(0,0,0,0);
+  background-color: transparent;
 }
