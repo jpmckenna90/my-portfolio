@@ -1,6 +1,6 @@
 $(document).ready(function () {
+
     
-    M.toast({html: 'I am a toast!', classes: 'rounded'});
 
   $(window).scroll(function () {
 
