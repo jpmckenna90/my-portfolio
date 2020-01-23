@@ -167,23 +167,23 @@
       <div class="container">
         <div class="row valign-wrapper">
           <h3 class="center-align">Get in Touch</h3>
-          <form class="col s12 m8">
+          <form class="col s12 m8" action="form.php" method="post" enctype="text/plain">
             <div class="row">
               <div class="input-field col s6">
-                <input placeholder="First Name" id="first_name" type="text">
+                <input placeholder="First Name" name="firstname" id="first_name" type="text">
               </div>
               <div class="input-field col s6">
-                <input placeholder="Last Name" id="last_name" type="text">
+                <input placeholder="Last Name" name="lastname" id="last_name" type="text">
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input placeholder="Email Address" id="email" type="email">
+                <input placeholder="Email Address" name="emailaddress" id="email" type="email">
               </div>
             </div>
                 <div class="row">
                   <div class="input-field col s12">
-                    <textarea placeholder="Message" id="textarea1" class="materialize-textarea"></textarea>
+                    <textarea placeholder="Message" name="message" id="textarea1" class="materialize-textarea"></textarea>
                   </div>
                 </div>
                 <button class="btn waves-effect waves-light" type="submit" name="action">Submit
