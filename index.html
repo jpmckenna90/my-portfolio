@@ -72,8 +72,8 @@
     <!-- About Begin -->
     <div class="valign-wrapper section scrollspy" id="about">
         <div class="container">
-          <div class="row valign-wrapper">
-            <div class="col s12 m4 l5 aboutcontent">
+          <div class="row valign-wrapper" id="aboutwrapper">
+            <div class="col s12 m12 l12 aboutcontent">
               <h3 class="animated fadeIn">About Me</h3>
               <p id="aboutmetext">
                 "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -92,8 +92,8 @@
                 pariatur?"
               </p>
             </div>
-            <div class="col s12 m7 l7">
-              <img src="assets/images/me.png" class="responsive-img aboutcontent" alt="a portrait of the idiot as a youngish man" id="me">
+            <div class="col s12 m12 l12 aboutcontent">
+              <img src="assets/images/me.png" class="responsive-img" alt="a portrait of the idiot as a youngish man" id="me">
             </div>
           </div>
         </div>
@@ -144,10 +144,10 @@
             </div>
             <div class="col s12 m6">
               <div class="card blue-grey darken-1">
-                <img src="assets/images/quiz.JPG" alt="Game of Thrones Quiz" class="portimg"  id="quiz">
+                <img src="assets/images/weather.JPG" alt="Weather App" class="portimg"  id="weather">
                 <div class="card-action center-align">
-                  <a href="https://danachen99.github.io/ingredience/">View Demo</a>
-                  <a href="https://github.com/danachen99/ingredience">View Code</a>
+                  <a href="https://jpmckenna90.github.io/weather-app/">View Demo</a>
+                  <a href="https://github.com/jpmckenna90/weather-app">View Code</a>
                 </div>
               </div>
             </div>
@@ -163,33 +163,30 @@
     <!-- Contact Begin -->
     <div class="section scrollspy" id="contact">
       <div class="container">
-        <div class="row">
+        <div class="row valign-wrapper">
           <h3 class="center-align">Get in Touch</h3>
           <form class="col s12 m8">
             <div class="row">
               <div class="input-field col s6">
-                <input placeholder="Placeholder" id="first_name" type="text">
-                <label for="first_name">First Name</label>
+                <input placeholder="First Name" id="first_name" type="text">
               </div>
               <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
-              </div>
-            </div>
-         
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="password" type="password">
-                <label for="password">Password</label>
+                <input placeholder="Last Name" id="last_name" type="text">
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="email" type="email">
-                <label for="email">Email</label>
+                <input placeholder="Email Address" id="email" type="email">
               </div>
             </div>
-            
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea placeholder="Message" id="textarea1" class="materialize-textarea"></textarea>
+                  </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
           </form>
         </div>
       </div> 

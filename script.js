@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-    
-
   $(window).scroll(function () {
 
       if ($(document).scrollTop() > 120) {
@@ -16,14 +14,9 @@ $(document).ready(function () {
           $(".navbar-fixed").removeClass("valign-wrapper");
       }
   });
-
-  
-  
-
-
   
   $(".sidenav").sidenav();
-  $('.scrollspy').scrollSpy(scrollOffset);
+  $('.scrollspy').scrollSpy(activeClass);
 
 
 });
